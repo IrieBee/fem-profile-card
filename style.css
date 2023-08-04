@@ -116,3 +116,13 @@ p {
     font-size: 0.65rem;
     letter-spacing: 0.1em;
 }
+
+.attribution { 
+    font-size: 0.625rem; 
+    text-align: center; 
+    margin-bottom: 0.75em;
+}
+
+.attribution a {
+    color: var(--dark-blue); 
+}
