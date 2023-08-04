@@ -16,7 +16,7 @@ This is a solution to the Profile Card Component challenge from Frontend Mentor.
 
 ### What I learned
 
-* To get rid off sidebar -> overflow: hidden
+* To get rid off sidebar (and to round border under image)-> overflow: hidden
 * To hide the background under text -> z-index: -1
 * Used ::before and ::after to place an image
 
