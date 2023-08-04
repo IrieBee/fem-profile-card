@@ -4,8 +4,9 @@
     --blue: hsl(227, 10%, 46%);
     --grey: hsl(0, 0%, 90%);
 
-    --position: -60%;
-    --size: calc(400px + 70%);
+    --position1: -40%;
+    --position2: -80%;
+    --size: calc(550px + 55%);
 }
 
 * , *::before, *::after{
@@ -39,14 +40,14 @@ body::before, body::after {
 
 body::before {
     background-image: url(images/bg-pattern-top.svg);
-    left: var(--position);
-    top: var(--position);
+    left: var(--position1);
+    top: var(--position2);
 }
 
 body::after {
     background-image: url(images/bg-pattern-bottom.svg);
-    right: var(--position);
-    bottom: var(--position);
+    right: var(--position1);
+    bottom: var(--position2);
     z-index: -1;
 }
 
@@ -85,8 +86,12 @@ p {
     text-align: center;
 }
 
+.city {
+    font-size: 0.9rem;
+}
+
 .profile {
-    padding: 1.5em;
+    padding: 1.2em;
     line-height: 1.8;
 }
 
@@ -94,7 +99,7 @@ p {
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 1em;
+    gap: .5em;
 }
 
 
