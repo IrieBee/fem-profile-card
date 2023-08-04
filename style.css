@@ -13,5 +13,49 @@
 }
 
 body {
-    min-height: 100%;
+    min-height: 100vh;
+    font-family: 'Kumbh Sans', sans-serif;
+    font-size: 1rem;
+    color: var(--blue);
+    background-color: var(--cyan);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    /* background-size: contain; */
+}
+
+main {
+    background-color: white;
+    margin: auto;
+    border-radius: 1em;
+    overflow: hidden;
+}
+
+h1, h2 {
+    font-size: 1rem;
+    font-weight: 700;
+    color: var(--dark-blue);
+}
+
+p {
+    text-align: center;
+}
+
+.info {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1em;
+}
+
+.age {
+    font-size: 2rem;
+}
+
+.stats {
+    display: flex;
+    justify-content: space-around;
+    border-top: 0.01em solid var(--grey);
+    padding: 1em;
 }
