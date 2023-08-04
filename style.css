@@ -26,10 +26,32 @@ body {
 }
 
 main {
+    position: relative;
     background-color: white;
     margin: auto;
     border-radius: 1em;
     overflow: hidden;
+}
+
+/* .bg {
+    position: relative;
+    top: 0;
+    left: 0;
+} */
+
+.hero {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 4.5rem;
+}
+
+
+.photo {
+    border-radius: 50%;
+    border: .4rem solid white;
+    position: absolute;
+    top: 86px;
+    align-self: center;
 }
 
 h1, h2 {
@@ -42,6 +64,10 @@ p {
     text-align: center;
 }
 
+.profile {
+    margin: 2em;
+}
+
 .info {
     display: flex;
     justify-content: center;
@@ -49,9 +75,9 @@ p {
     gap: 1em;
 }
 
-.age {
-    font-size: 2rem;
-}
+/* .age {
+    font-size: 1rem;
+} */
 
 .stats {
     display: flex;
