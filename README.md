@@ -6,7 +6,7 @@ This is a solution to the Profile Card Component challenge from Frontend Mentor.
 
 ### Screenshot
 
-![screenshot](https://github.com/ltsyBitsy/fem-profile-card/blob/main/images/screenshot.jpg)
+![screenshot](https://github.com/ltsyBitsy/fem-profile-card/blob/main/images/Screenshot.jpg)
 
 ## Built with
 
