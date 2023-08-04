@@ -2,27 +2,52 @@
     --cyan: hsl(185, 75%, 39%);
     --dark-blue: hsl(229, 23%, 23%);
     --blue: hsl(227, 10%, 46%);
-    --grey: hsl(0, 0%, 59%);
+    --grey: hsl(0, 0%, 90%);
 
+    --position: -60%;
+    --size: calc(400px + 70%);
 }
 
-* {
+* , *::before, *::after{
     box-sizing: border-box;
     margin: 0;
     padding: 0;
 }
 
 body {
+    position: relative;
     min-height: 100vh;
     font-family: 'Kumbh Sans', sans-serif;
-    font-size: 1rem;
+    font-size: 1.1rem;
     color: var(--blue);
-    background-color: var(--cyan);
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    /* background-size: contain; */
+    background-color: var(--cyan);
+    overflow: hidden;
+}
+
+body::before, body::after {
+    content: "";
+    position: absolute;
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: var(--size);
+    aspect-ratio: 1 / 1;
+}
+
+body::before {
+    background-image: url(images/bg-pattern-top.svg);
+    left: var(--position);
+    top: var(--position);
+}
+
+body::after {
+    background-image: url(images/bg-pattern-bottom.svg);
+    right: var(--position);
+    bottom: var(--position);
+    z-index: -1;
 }
 
 main {
@@ -31,33 +56,28 @@ main {
     margin: auto;
     border-radius: 1em;
     overflow: hidden;
+    max-width: 80%;
 }
-
-/* .bg {
-    position: relative;
-    top: 0;
-    left: 0;
-} */
 
 .hero {
     display: flex;
     flex-direction: column;
-    margin-bottom: 4.5rem;
+    margin-bottom: 3rem;
 }
-
 
 .photo {
     border-radius: 50%;
     border: .4rem solid white;
     position: absolute;
-    top: 86px;
+    top: 5em;
     align-self: center;
 }
 
 h1, h2 {
-    font-size: 1rem;
-    font-weight: 700;
+    font-size: 1.1rem;
+    font-weight:700;
     color: var(--dark-blue);
+    letter-spacing: 0.04em;
 }
 
 p {
@@ -65,7 +85,8 @@ p {
 }
 
 .profile {
-    margin: 2em;
+    padding: 1.5em;
+    line-height: 1.8;
 }
 
 .info {
@@ -75,13 +96,23 @@ p {
     gap: 1em;
 }
 
-/* .age {
-    font-size: 1rem;
-} */
 
 .stats {
     display: flex;
     justify-content: space-around;
-    border-top: 0.01em solid var(--grey);
-    padding: 1em;
+    align-items: center;
+    border-top: 0.05em solid var(--grey);
+    padding: 1.5em;
+}
+
+.numbers {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.25em;
+}
+
+.description {
+    font-size: 0.65rem;
+    letter-spacing: 0.1em;
 }

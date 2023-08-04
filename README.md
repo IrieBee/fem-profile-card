@@ -16,7 +16,10 @@ This is a solution to the Order Summary Card challenge from Frontend Mentor.
 
 ### What I learned
 
-* 
+* To get rid off sidebar -> overflow: hidden
+* To hide the background under text -> z-index: -1
+* Used ::before and ::after to place an image.
+
 
 ## Links
 
@@ -25,7 +28,9 @@ This is a solution to the Order Summary Card challenge from Frontend Mentor.
 
 ## Useful resources
 
-
+* https://www.w3schools.com/css/css3_backgrounds.asp
+* https://stackoverflow.com/a/25431520
+* https://developer.mozilla.org/en-US/docs/Web/CSS/background-position
 
 ## Acknowledgements
 
